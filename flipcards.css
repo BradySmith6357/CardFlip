@@ -1,0 +1,16 @@
+.front {
+	position:absolute;
+}
+.back {
+	-webkit-transform:rotateX(180deg);
+}
+.portfolio-item:hover .front {
+	-webkit-transform:rotateX(180deg);
+}
+.portfolio-item:hover .back {
+	-webkit-transform:rotateX(360deg);
+}
+.front, .back {
+	-webkit-transition:all 2s;
+	backface-visibility: hidden;
+}
